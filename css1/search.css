@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    -webkit-box-orient: vertical;
+}
+
+.container header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: -webkit-box;
+    width: 100%;
+    height: 0.88rem;
+    background: #3FBC5B;
+}
+
+.container header form {
+    position: relative;
+}
+
+.container header form span {
+    position: absolute;
+    left: 0.2rem;
+    top: 0.3rem;
+    color: #D6D6D6;
+    font-size: 0.3rem;
+}
+
+.container header form input {
+    height: 0.6rem;
+    margin-top: 0.15rem;
+    border-radius: 0.1rem;
+    outline: none;
+    border: 1px solid #ccc;
+    line-height: 0.6rem;
+    padding-left: 0.68rem;
+    width: 100%;
+}
+
+.back {
+    font-size: 0.44rem;
+    line-height: 0.88rem;
+    padding-left: 0.24rem;
+    padding-right: 0.1rem;
+    font-weight: normal;
+}
+
+.back a {
+    color: #fff;
+}
+
+.container header i {
+    font-style: normal;
+    font-size: 0.28rem;
+    color: #fff;
+    text-align: right;
+    line-height: 0.88rem;
+    padding-right: 0.24rem;
+    font-weight: bold;
+}
+
+.back,
+.container header form,
+.container header i {
+    -webkit-box-flex: 1;
+    display: block;
+}
+
+.container section {
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.container section h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.24rem;
+    color: #B3B3B3;
+    height: 1rem;
+    line-height: 1.2rem;
+    border-bottom: 1px solid #999;
+}
+
+.hot {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hot li {
+    font-size: 0.24rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.hot li a {
+    color: #B3B3B3
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.product header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    text-align: center;
+    width: 100%;
+    height: 0.88rem;
+    background: #3FBC5B;
+}
+
+.product header a {
+    display: block;
+    -webkit-box-flex: 1;
+    font-size: 0.5rem;
+    color: #FFF;
+}
+
+.product header h2 {
+    -webkit-box-flex: 3;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #FFF;
+}
+
+.product section {
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    width: 100%;
+    background: #F7F7F7;
+    overflow: auto;
+}
+
+.product section dl {
+    width: 46%;
+    float: left;
+    height: 5.7rem;
+    margin-top: 0.2rem;
+    border: 1px solid #888;
+    margin-left: 0.2rem;
+}
+
+.product section dl dt img {
+    width: 100%;
+}
+
+.product section dl dd {
+    width: 90%;
+    height: 0.6rem;
+    margin: 0 auto;
+    line-height: 0.6rem;
+}
+
+.jianjie {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dd-2 {
+    display: -webkit-box;
+}
+
+dd.dd-2 span {
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+
+.price {
+    color: #F00;
+    font-weight: bolder;
+    font-size: 0.25rem;
+}
+
+.zan {
+    color: #b5b0b0;
+    font-weight: bolder;
+}
+
+#black {
+    position: fixed;
+    top: 0.88rem;
+    left: 0;
+    width: 100%;
+    height: 10.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 99;
+}
+
+.price-list {
+    position: fixed;
+    top: 0.88rem;
+    right: 0;
+    width: 50%;
+    height: 5rem;
+    background: #eee;
+    display: none;
+    z-index: 999;
+}
+
+.price-list li:nth-child(1) {
+    background: #fff7f7;
+}
+
+.price-list li {
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #999;
+}
